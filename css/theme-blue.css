@@ -1202,7 +1202,7 @@ section .login-overlay {
 #intro .carousel-caption-center h1,
 #intro-video .carousel-caption-center h1 {
   font-size: 3em;
-  font-weight: 800;
+  /*font-weight: 800;*/
   margin: 0 0 0.5em;
 }
 #intro .carousel-caption-center h2,
