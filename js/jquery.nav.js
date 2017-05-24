@@ -58,6 +58,7 @@
 			//Filter any links out of the nav
 			if(self.config.filter !== '') {
 				self.$nav = self.$nav.filter(self.config.filter);
+        console.log(self.config.filter)
 			}
 			
 			//Handle clicks on the nav
@@ -106,6 +107,10 @@
 		},
 		
 		getHash: function($link) {
+      if($link.attr('id')){
+        console.log($link.attr('id'))
+        $link.unbind();
+      }
 			return $link.attr('href').split('#')[1];
 		},
 		
@@ -118,7 +123,6 @@
 			self.$nav.each(function() {
 				linkHref = self.getHash($(this));
 				$target = $('#' + linkHref);
-
 				if($target.length) {
 					topPos = $target.offset().top;
 					self.sections[linkHref] = Math.round(topPos) - self.config.scrollOffset;

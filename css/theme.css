@@ -2572,7 +2572,7 @@ footer.footer .icon {
   text-align: center;
   color: #d8d8d8;
   font-size: 1em;
-  margin: 0 1em;
+  margin: 0.4em 1em 0 1em;
 }
 
 .icon:hover {
